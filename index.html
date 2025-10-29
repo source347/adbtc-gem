@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Your Earning Potential Online - Start Today!</title>
+    <meta name="description" content="Discover a new way to earn online with minimal effort. Join our growing community and start your journey towards financial freedom. Click here to get started!">
+    <meta name="keywords" content="earn online, passive income, cryptocurrency, free crypto, online earnings, make money online, get paid to click, adbtc">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --button-hover-bg: #0056b3;
+            --game-bg: #f1f1f1;
+            --game-text: #333;
+        }
+
+        body.dark-mode {
+            --primary-color: #8c00ff;
+            --secondary-color: #adb5bd;
+            --text-color: #f1f1f1;
+            --bg-color: #2c2c2c;
+            --card-bg: #3c3c3c;
+            --border-color: #4a4a4a;
+            --button-hover-bg: #6e00cc;
+            --game-bg: #4a4a4a;
+            --game-text: #f1f1f1;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #6a11cb);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255,255,255,0.1);
+            transform: rotate(45deg);
+            animation: moveWave 20s infinite linear;
+            z-index: 0;
+        }
+
+        @keyframes moveWave {
+            0% { transform: rotate(45deg) translate(-25%, -25%); }
+            100% { transform: rotate(45deg) translate(25%, 25%); }
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out 0.5s backwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ffc107;
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+            animation: pulse 1.5s infinite;
+        }
+
+        .cta-button:hover {
+            background-color: #e0a800;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-weight: 600;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            font-size: 1em;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .testimonial-carousel {
+            margin-top: 50px;
+            overflow: hidden;
+            position: relative;
+            padding: 20px 0;
+            animation: slideInRight 1s ease-out;
+        }
+
+        .testimonial-item {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 0 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: calc(33% - 30px); /* Adjust for 3 items per view */
+            box-sizing: border-box;
+            vertical-align: top;
+            transition: transform 0.3s ease, background-color 0.5s ease;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .testimonial-item b {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .call-to-action {
+            background: linear-gradient(45deg, #ff9a8b 0%, #ff6a88 50%, #ff99ac 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 60px;
+            animation: bounceIn 1s ease-out;
+        }
+
+        .call-to-action h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .call-to-action p {
+            font-size: 1.4em;
+            margin-bottom: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .call-to-action .cta-button {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        .call-to-action .cta-button:hover {
+            background-color: #f0f0f0;
+            color: var(--button-hover-bg);
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: -20px; /* Overlap with CTA section */
+        }
+
+        .interactive-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .interactive-controls button,
+        .interactive-controls select {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: var(--text-color);
+        }
+
+        .interactive-controls button:hover,
+        .interactive-controls select:hover {
+            background-color: var(--button-hover-bg);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Simple JavaScript Game (Guess the Number) */
+        .game-section {
+            background-color: var(--game-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 60px auto;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.5s ease, border-color 0.5s ease;
+        }
+
+        .game-section h3 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .game-section p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: var(--game-text);
+        }
+
+        .game-section input[type="number"] {
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 1em;
+            width: 150px;
+            margin-right: 10px;
+            transition: border-color 0.3s ease;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+        }
+
+        .game-section input[type="number"]:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .game-section button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .game-section button:hover {
+            background-color: var(--button-hover-bg);
+            transform: translateY(-2px);
+        }
+
+        #game-message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            section h2 {
+                font-size: 2em;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .testimonial-item {
+                width: calc(100% - 30px);
+                margin-bottom: 20px;
+            }
+            .testimonial-carousel {
+                white-space: nowrap; /* Keep items on a single line for simple mobile scrolling */
+                overflow-x: scroll;
+                -webkit-overflow-scrolling: touch;
+            }
+            .call-to-action h2 {
+                font-size: 2em;
+            }
+            .call-to-action p {
+                font-size: 1.1em;
+            }
+            .interactive-controls {
+                flex-direction: row;
+                top: auto;
+                bottom: 20px;
+                right: 50%;
+                transform: translateX(50%);
+                background-color: var(--card-bg);
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                width: calc(100% - 40px);
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="interactive-controls">
+        <button id="dayNightToggle">Toggle Day/Night</button>
+        <select id="colorChanger">
+            <option value="default">Default Blue</option>
+            <option value="green">Energetic Green</option>
+            <option value="purple">Vibrant Purple</option>
+            <option value="orange">Warm Orange</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1><b>Unlock Your Online Earning Potential!</b></h1>
+            <p>Ready to discover a simple and effective way to earn online? Join thousands already benefiting!</p>
+            <a href="https://r.adbtc.top/1169353" target="_blank" class="cta-button"><b>Start Earning Now!</b></a>
+        </div>
+    </header>
+
+    <section id="introduction">
+        <div class="container">
+            <h2><b>Your Journey to Effortless Online Earnings Begins Here</b></h2>
+            <p>
+                In today's digital world, opportunities to generate income online are more accessible than ever. This platform offers a straightforward and rewarding path for anyone looking to supplement their income, or even build a new stream of revenue, all from the comfort of their home. Forget complex schemes or significant investments; we focus on simplicity and tangible results. Our method is designed for everyone, regardless of their prior experience with online tasks or digital currencies.
+            </p>
+            <p>
+                Imagine a system where your time translates directly into valuable earnings. We provide a gateway to engaging activities that pay. Whether you have a few minutes during a coffee break or a couple of hours in the evening, you can utilize that time to your financial advantage. The process is transparent, secure, and built with user satisfaction in mind. Dive into an ecosystem where your efforts are recognized and rewarded promptly.
+            </p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2><b>Why Choose This Earning Opportunity?</b></h2>
+            <p>We believe in empowering individuals with tools for financial growth. Here are just a few reasons why this opportunity stands out:</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3><b>Simplicity & Accessibility</b></h3>
+                    <p>No prior experience needed! Our platform is incredibly user-friendly, making it easy for beginners to start earning immediately. All you need is an internet connection.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><b>Flexible Schedule</b></h3>
+                    <p>Work at your own pace and on your own terms. There are no fixed hours or deadlines, allowing you to fit earning into your existing lifestyle seamlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><b>Real Earnings</b></h3>
+                    <p>Convert your time into real value. We offer clear earning rates and diverse tasks to ensure you can maximize your potential rewards.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><b>Secure & Reliable</b></h3>
+                    <p>Your security and privacy are paramount. Our platform employs robust measures to protect your information and ensure smooth operations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><b>Global Community</b></h3>
+                    <p>Join a vibrant community of earners from around the world. Share tips, get support, and grow together in your online earning journey.</p>
+                </div>
+                <div class="feature-card">
+                    <h3><b>Instant Access</b></h3>
+                    <p>Get started in minutes! A quick registration is all it takes to unlock a world of earning possibilities. No waiting periods, no complicated approvals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2><b>What Our Users Are Saying</b></h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-item">
+                    <p>"I was skeptical at first, but this platform truly delivers! I've been able to earn consistently and it's super easy to use."</p>
+                    <b>- Alex P.</b>
+                </div>
+                <div class="testimonial-item">
+                    <p>"A fantastic way to make extra income in my spare time. The flexibility is unmatched, and I appreciate the straightforward process."</p>
+                    <b>- Sarah L.</b>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Finally, an online earning site that actually works! The payouts are reliable, and I love the variety of tasks available."</p>
+                    <b>- Mike R.</b>
+                </div>
+                 <div class="testimonial-item">
+                    <p>"Highly recommended for anyone looking to dip their toes into online earning. It's safe, fun, and genuinely rewarding."</p>
+                    <b>- Emily W.</b>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game-fun">
+        <div class="container">
+            <h2><b>A Little Fun While You Explore!</b></h2>
+            <div class="game-section">
+                <h3><b>Guess My Number!</b></h3>
+                <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+                <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess">
+                <button id="guessButton">Guess</button>
+                <p id="game-message"></p>
+                <button id="resetGameButton" style="display: none; margin-top: 15px;">Play Again</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="container">
+            <h2><b>Don't Miss Out on This Opportunity!</b></h2>
+            <p>Every minute counts when it comes to boosting your income. Take the first step towards a more financially empowered future today.</p>
+            <a href="https://r.adbtc.top/1169353" target="_blank" class="cta-button"><b>Join For Free & Start Earning!</b></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Online Earning Opportunity. All rights reserved.</p>
+            <p>Disclaimer: Results may vary. Engage responsibly.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Day/Night Toggle
+        const dayNightToggle = document.getElementById('dayNightToggle');
+        const body = document.body;
+
+        dayNightToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        // Load saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+        }
+
+        // Color Changer
+        const colorChanger = document.getElementById('colorChanger');
+        const root = document.documentElement;
+
+        colorChanger.addEventListener('change', (event) => {
+            const selectedColor = event.target.value;
+            switch (selectedColor) {
+                case 'green':
+                    root.style.setProperty('--primary-color', '#28a745');
+                    root.style.setProperty('--button-hover-bg', '#218838');
+                    break;
+                case 'purple':
+                    root.style.setProperty('--primary-color', '#6f42c1');
+                    root.style.setProperty('--button-hover-bg', '#563d7c');
+                    break;
+                case 'orange':
+                    root.style.setProperty('--primary-color', '#fd7e14');
+                    root.style.setProperty('--button-hover-bg', '#e66a00');
+                    break;
+                default: // default blue
+                    root.style.setProperty('--primary-color', '#007bff');
+                    root.style.setProperty('--button-hover-bg', '#0056b3');
+                    break;
+            }
+            localStorage.setItem('themeColor', selectedColor);
+        });
+
+        // Load saved color preference
+        const savedColor = localStorage.getItem('themeColor');
+        if (savedColor) {
+            colorChanger.value = savedColor;
+            colorChanger.dispatchEvent(new Event('change')); // Apply the color
+        }
+
+        // Simple Guess the Number Game
+        let secretNumber;
+        let attempts;
+        const guessInput = document.getElementById('guessInput');
+        const guessButton = document.getElementById('guessButton');
+        const gameMessage = document.getElementById('game-message');
+        const resetGameButton = document.getElementById('resetGameButton');
+
+        function startGame() {
+            secretNumber = Math.floor(Math.random() * 100) + 1;
+            attempts = 0;
+            gameMessage.textContent = '';
+            guessInput.value = '';
+            guessInput.disabled = false;
+            guessButton.disabled = false;
+            resetGameButton.style.display = 'none';
+        }
+
+        function checkGuess() {
+            const userGuess = parseInt(guessInput.value);
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                gameMessage.textContent = 'Please enter a valid number between 1 and 100.';
+                return;
+            }
+
+            attempts++;
+
+            if (userGuess === secretNumber) {
+                gameMessage.textContent = `Congratulations! You guessed the number ${secretNumber} in ${attempts} attempts!`;
+                guessInput.disabled = true;
+                guessButton.disabled = true;
+                resetGameButton.style.display = 'inline-block';
+            } else if (userGuess < secretNumber) {
+                gameMessage.textContent = 'Too low! Try again.';
+            } else {
+                gameMessage.textContent = 'Too high! Try again.';
+            }
+            guessInput.value = ''; // Clear input after guess
+            guessInput.focus();
+        }
+
+        guessButton.addEventListener('click', checkGuess);
+        guessInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                checkGuess();
+            }
+        });
+        resetGameButton.addEventListener('click', startGame);
+
+        startGame(); // Initialize the game on page load
+    </script>
+</body>
+</html>
